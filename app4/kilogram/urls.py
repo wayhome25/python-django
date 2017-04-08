@@ -7,5 +7,6 @@ from . import views
 app_name = 'kilogram'
 
 urlpatterns = [
- url(r'^$', views.IndexView.as_view(), name = 'index'),
+    url(r'^$', views.IndexView.as_view(), name = 'index'),
+    url(r'^uploads$', views.upload, name = 'upload'),
 ]
